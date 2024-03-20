@@ -1,0 +1,103 @@
+
+.category-section {
+    padding: 10px;
+    width: 800px;
+}
+.category-section .category-form{
+   padding: 10px;
+   padding-bottom: 20px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap:10px;
+}
+.category-section .category-form .input-category-box{
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+}
+.category-section .category-form .input-category-box .input-category{
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.63);
+    padding-left: 10px;
+    font-size: medium;
+}
+.category-section .category-form label{
+    font-size:large;
+    color: gray;
+}
+.category-section .category-form .category-submit{
+    width: 80px;
+    background-color:#162938ce;
+    height: 40px;
+    font-size: medium;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+.category-section .category-form .category-submit:hover{
+    background-color: #162938 ;
+}
+.category-section .category-form .input-category-box .error-message{
+    color: red;
+    font-size: large;
+}
+.error{
+    border: 1px solid red !important;
+}
+.category-section .render-category-part{
+    width: 100%;
+    padding: 10px;
+}
+.category-section .render-category-part .title-category-box{
+    margin: auto;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.category-section .render-category-part .table-category{
+    width: 100%;
+    border-spacing: 0;
+}
+.category-section .render-category-part .table-category .title-table{
+    background-color: rgba(0, 128, 0, 0.767);
+    color: white;
+    height: 40px;
+    line-height: 40px;
+}
+.category-section .render-category-part .table-category .title-table th:last-child{
+    width: 250px;
+}
+.category-section .render-category-part .table-category .title-table th:first-child{
+    width: 100px;
+}
+.category-section .render-category-part .table-category .body-category tr{
+    border: 1px solid black !important;
+    height:  50px;
+    /* background-color: red; */
+}
+.category-section .render-category-part .table-category .body-category tr td:last-child{
+  text-align: center;
+}
+.category-section .render-category-part .table-category .body-category button{
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: auto;
+    cursor: pointer;
+}
+.category-section .render-category-part .table-category .body-category .edit-category{
+    background-color: rgba(0, 128, 0, 0.849);
+}
+.category-section .render-category-part .table-category .body-category .erase-category{
+    background-color: red;
+}
+
+

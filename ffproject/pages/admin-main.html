@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../style/admin-total.css">
+    <link rel="stylesheet" href="../style/admin-category.css">
+    <link rel="stylesheet" href="../style/admin-product.css">
+</head>
+<body>
+    <div class="sidebar">
+       <ul class="list-infor">
+        <li class="list-item">
+            <i class='bx bxs-folder-open'></i>
+            <span>Danh mục</span>
+        </li>
+        <li class="list-item">
+            <i class='bx bxs-dashboard'></i>
+            <span>Khóa học</span>
+        </li>
+        <li class="list-item">
+            <i class='bx bx-user'></i>
+           <span>Người dùng</span>
+        </li>
+        <li class="list-item">
+            <i class='bx bx-lock'></i>
+            <span>Log out</span>
+        </li>
+       </ul>
+    </div> 
+    <div class="category-section">
+        <form action="" class="category-form">
+            <h3>Quản lí danh mục </h3>
+            <div class="input-category-box">
+                <label for="">Tên danh mục</label>
+                <input type="text" placeholder="Nhập tên danh mục" name="name" class="input-category name">
+                <span class="error-message"></span>
+            </div>
+            <button class="category-submit">Submit</button>
+        </form>
+        <div class="render-category-part"> 
+            <div class="title-category-box">
+                <h3>Danh mục</h3> 
+            </div>
+            <table class="table-category">
+                <tr class="title-table">
+                    <th>id</th>
+                    <th>Tên danh mục</th>
+                    <th>Actions</th>
+                </tr>
+                <tbody class="body-category"></tbody>
+            </table>     
+        </div>
+    </div>
+    <div class="courses-section">
+        <h3>Quản lí khóa học</h3>
+        <form action="" class="courses-form">
+            <div>
+                <label for="">Tên khóa học</label>
+                <input type="text" placeholder="Nhập tên khóa học">
+            </div>
+            <div>
+                <label for="">Danh mục</label>
+                <input type="text" placeholder="chọn danh mục">
+                <div class="category-in-product">
+                    <i class='bx bxs-down-arrow'></i>
+                    <ul>
+                        <li id class="list-item"></li>
+                    </ul>
+                </div>
+            </div> 
+            <div>
+                <label for="">ảnh khóa học</label>
+                <input type="text" placeholder="nhập link ảnh">
+            </div>
+            <div>
+              <label for="">Gía khóa học</label>
+              <input type="text" placeholder="nhập giá khóa học">
+            </div>
+            <div>
+                <label for="">Mô tả khóa học</label>
+                <input type="text" placeholder>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../js/category-ad.js"></script>
+<script src="../js/course-ad.js"></script>
+</html>
